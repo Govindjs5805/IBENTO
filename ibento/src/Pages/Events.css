@@ -1,0 +1,129 @@
+.all-events-wrapper {
+  background-color: #05050a;
+  min-height: 100vh;
+  padding: 80px 5%;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* The flowing purple background */
+.silk-bg-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.12), transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(88, 28, 135, 0.15), transparent 50%);
+  z-index: 0;
+}
+
+.events-header {
+  margin-top: -30px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.glitch-text {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(180deg, #ffffff 50%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+}
+
+.header-sub { background: #b46be2;
+  margin-top: -10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem; }
+
+/* Compact Grid */
+.events-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Sleek Glass Card */
+.event-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.event-glass-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.event-image-container {
+  height: 150px;
+  position: relative;
+}
+
+.event-img { width: 100%; height: 100%; object-fit: cover; }
+
+.category-tag {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: #8b5cf6;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.event-details { padding: 15px; }
+
+.event-title-compact {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+.detail-row-mini {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.register-neon-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #8b5cf6;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.event-glass-card:hover .register-neon-btn {
+  background: #8b5cf6;
+  box-shadow: 0 0 15px #8b5cf6;
+}
+
+.loading-screen {
+  background: #05050a;
+  color: #8b5cf6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
